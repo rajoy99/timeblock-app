@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeblock App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⏰ Timeblock Planner</h1>
+            <p class="instructions">Click and drag on the timeline to create timeblocks. Click a timeblock to delete it.</p>
+        </header>
+
+        <div class="main-content">
+            <div class="analytics-section">
+                <h2>📊 Today's Analytics</h2>
+                <div class="analytics-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-hours">0.0</div>
+                        <div class="stat-label">Total Hours</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="block-count">0</div>
+                        <div class="stat-label">Timeblocks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="avg-duration">0.0</div>
+                        <div class="stat-label">Avg Duration (hrs)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-section">
+                <h2>📅 Daily Timeline</h2>
+                <div class="timeline-container">
+                    <div class="timeline-labels" id="timeline-labels"></div>
+                    <div class="timeline-grid" id="timeline-grid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
