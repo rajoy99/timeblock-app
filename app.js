@@ -75,9 +75,14 @@ class TimeblockApp {
     setupEventListeners() {
         // Mouse down to start dragging
         this.timelineGrid.addEventListener('mousedown', (e) => {
-            if (e.target.classList.contains('timeblock')) {
+            // Check if clicked element or its parent is a timeblock
+            const timeblock = e.target.classList.contains('timeblock') 
+                ? e.target 
+                : e.target.closest('.timeblock');
+            
+            if (timeblock) {
                 // Clicking on existing timeblock - delete it
-                this.deleteTimeblock(e.target.dataset.id);
+                this.deleteTimeblock(timeblock.dataset.id);
                 return;
             }
 
