@@ -203,7 +203,7 @@ class TimeblockApp {
 
             element.innerHTML = `
                 <div class="timeblock-time">${timeRange}</div>
-                <div class="timeblock-duration">${duration.toFixed(2)} hours</div>
+                <div class="timeblock-duration">${duration.toFixed(1)} hours</div>
             `;
 
             this.timelineGrid.appendChild(element);

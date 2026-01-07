@@ -127,7 +127,7 @@ header h1 {
 .timeline-grid {
     flex: 1;
     position: relative;
-    min-height: 1440px; /* 24 hours * 60px per hour */
+    min-height: 1440px; /* 24 hours * 4 slots * 15px = 1440px */
     background: white;
     border-radius: 8px;
     border: 2px solid #e0e0e0;
